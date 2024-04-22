@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bluetext {  /* 클래스 선택자 */       
+            color: rgb(96, 96, 255); /* 글자색 */
+        }
+    </style>
+</head>
+<body>
+    <h2>대학헌장</h2>
+    <textarea cols="80" rows="3">
+        진리는 학문의 궁극적인 목표이고,
+        가치는 학문의 객관적 당위성을 평가하는 참된 기준이며,
+        정의는 올바른 행동의 지표이다.
+    </textarea>
+    <h3 class="bluetext">공주대학교의 교육이념은
+        진리탐구,가치창조,정의실천이다.
+        </h3>
+    <p>
+        <ul>
+            <li>과거의 전통을 계승하여 미래 중심 대학을 지향한다</li>
+            <li>수요자 중심의 열린 특성화 교육을 실천한다</li>
+            <li>학생들의 다양한 소질과 능력을 개발할 수 있는 교육을 실천한다</li>
+            <li>학사제도를 호율적이고 합리적으로 운영한다</li>
+        </ul>
+    </p>
+    <fieldset>
+        <legend>검색하기</legend>
+        <select id="college">
+            <option>제목</option>
+            <option>작성자</option>
+        </select>
+        <input type="text" id="sec" autofocus required placeholder="검색어를 입력해주세요">
+        <button type="submit">
+            검색
+        </button><br><br>
+    </fieldset>
+    <label>페이지 7</label>
+    <progress value="7" max="10"></progress>
+    <br><br>
+    <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+        <label>페이지 이동</label>
+        <input type="range" id="b" name="b" value="50" /> +
+        <input type="range" id="a" name="a" value="10" /> =
+        <output name="result" for="a b">60</output>
+      </form>
+</body>
+</html>
